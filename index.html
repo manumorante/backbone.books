@@ -6,7 +6,7 @@
 
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>Home</title>
+<title></title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,11 +16,24 @@
 <body class="index">
 
 <div class="container" id="app">
-
   <h1>Books Store</h1>
-
-
 </div>
+
+<script id="listTlp" type="text/template">
+  <li class="media">
+    <div class="media-left">
+      <a href="{{ref}}">
+        <img class="media-object" src="http://lorempixel.com/60/100/people/{{ref}}/">
+      </a>
+    </div>
+
+    <div class="media-body">
+      <h4 class="media-heading">{{title}}</h4>
+      <p>{{author}}</p>
+      <small>REF: DX000{{ref}}</small>
+    </div>
+  </li>
+</script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
