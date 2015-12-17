@@ -1,0 +1,24 @@
+scss_files: 'source/assets/css/**/*.scss'
+#exclude: 'source/assets/css/lib/**'
+
+linters:
+  NameFormat:
+    enabled: true
+    convention: 'BEM'
+
+  SelectorFormat:
+    enabled: true
+    convention: 'BEM'
+
+  NestingDepth:
+    enabled: true
+    max_depth: 3
+
+  HexNotation:
+    enabled: false
+
+  FinalNewline:
+    enabled: false
+
+  Comment:
+    enabled: false
