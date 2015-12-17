@@ -1,35 +1,39 @@
-*.rbc
-capybara-*.html
-.rspec
-/log
-/tmp
-/db/*.sqlite3
-/db/*.sqlite3-journal
-/public/system
-/coverage/
-/spec/tmp
-**.orig
-rerun.txt
-pickle-email-*.html
+# General Gitignore file for front-end projects
+# **********************************************
+# Manu Morante @unavezfui
+# Last update: January 04, 2015
+# https://gist.github.com/manumorante/6bc9e39ce86fd15ba007
+# Based on https://github.com/github/gitignore
 
-# TODO Comment out these rules if you are OK with secrets being uploaded to the repo
-config/initializers/secret_token.rb
-config/secrets.yml
 
-## Environment normalisation:
-/.bundle
-/vendor/bundle
+# Your ignore rules
+# *****************
 
-# these should all be checked in to normalise the environment:
-# Gemfile.lock, .ruby-version, .ruby-gemset
 
-# unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
-.rvmrc
+# SASS
+# *****************
+.sass-cache/
+.sass-cache/*
+*.css.map
 
-# if using bower-rails ignore default bower_components path bower.json files
-/vendor/assets/bower_components
-*.bowerrc
-bower.json
 
-# Ignore pow environment settings
-.powenv
+# Frameworks
+# *****************
+.idea/
+*.sublime-workspace
+*.sublime-project
+node_modules
+
+
+# OS X cache files
+# *****************
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+
+
+# Windows image file caches
+# *****************
+Thumbs.db
+ehthumbs.db

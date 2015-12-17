@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <%= partial 'layouts/head' %>
+</head>
+<body class="<%= page_classes %>">
+
+<%= yield %>
+
+<%= javascript_include_tag  'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js' %>
+<%= javascript_include_tag  'http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore.js' %>
+<%= javascript_include_tag  'http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone-min.js' %>
+<%= javascript_include_tag  'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js' %>
+<%= javascript_include_tag  'application' %>
+
+</body>
+</html>
