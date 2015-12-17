@@ -1,1 +1,0 @@
-(function(){var t=function(t,o){function n(){this.constructor=t}for(var p in o)r.call(o,p)&&(t[p]=o[p]);return n.prototype=o.prototype,t.prototype=new n,t.__super__=o.prototype,t},r={}.hasOwnProperty;App.Item=function(r){function o(){return o.__super__.constructor.apply(this,arguments)}return t(o,r),o.prototype.defaults={part1:"Bye",part2:"World"},o}(Backbone.Model)}).call(this);
