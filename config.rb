@@ -37,11 +37,11 @@ configure :build do
   activate :minify_javascript
   activate :relative_assets
 
-  ignore '/helpers/*'
-  ignore '/*.md'
-
   # You can auto ignore files using the prefix "_".
-  ignore '/assets/js/ui/*'
-  ignore '/assets/css/lib/*'
-  ignore '/assets/css/ui/*'
+  ignore '/*.md'
+  ignore '/assets/js/models/*'
+  ignore '/assets/js/collections/*'
+  ignore '/assets/js/views/*'
+  ignore '/assets/js/controllers/*'
+  ignore '/assets/js/templates/*'
 end
