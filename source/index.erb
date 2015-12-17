@@ -1,10 +1,19 @@
----
-title: Home
----
-
 <div class="container" id="app">
-
   <h1>Books Store</h1>
-
-
 </div>
+
+<script id="listTlp" type="text/template">
+  <li class="media">
+    <div class="media-left">
+      <a href="{{ref}}">
+        <img class="media-object" src="http://lorempixel.com/60/100/people/{{ref}}/">
+      </a>
+    </div>
+
+    <div class="media-body">
+      <h4 class="media-heading">{{title}}</h4>
+      <p>{{author}}</p>
+      <small>REF: DX000{{ref}}</small>
+    </div>
+  </li>
+</script>

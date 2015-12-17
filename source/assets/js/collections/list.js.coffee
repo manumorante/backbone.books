@@ -3,7 +3,9 @@ class App.List extends Backbone.Collection
 
   addRandomItem: ->
     item = new App.Item
+    ++App.refTotal
     item.set
-      part1: 'Hello'
-      part2: item.get('part2') + ' ' + (new Date).getMilliseconds()
+      title: 'Undefined title'
+      author: 'Undefined author'
+      ref: App.refTotal
     @add item

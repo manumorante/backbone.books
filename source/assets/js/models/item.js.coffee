@@ -1,4 +1,5 @@
 class App.Item extends Backbone.Model
   defaults:
-    part1: 'Bye'
-    part2: 'World'
+    title: 'Swan Lake'
+    author: 'Anonymous'
+    ref: '1'

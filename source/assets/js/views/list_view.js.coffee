@@ -5,15 +5,22 @@ class App.ListView extends Backbone.View
   initialize: ->
     @collection = new App.List
     @collection.on 'add', @addItem, this
-    #this.listenTo(this.collection, 'add', this.update);
+    @template = _.template($('#listTlp').html())
     @render()
 
   render: ->
-    @$el.append '<button class="add btn btn-primary">Add</button>'
-    @$el.append '<ul class="list"></ul>'
+    @$el.append '<button class="add btn btn-primary">Add new book</button>'
+    @$el.append '<h5>Total refs: <span id="refTotal" class="label label-success">0</span><h5/>'
+    @$el.append '<hr>'
+    @$el.append '<ul id="list" class="media-list">'
 
   addItem: (item) ->
-    $('.list').append '<li>' + item.get('part1') + ' ' + item.get('part2') + '</li>'
+    $('#refTotal').html(App.refTotal)
+    $('#list').append @template({
+      title: item.get('title'),
+      author: item.get('author'),
+      ref: item.get('ref')
+    })
 
   add: ->
     @collection.addRandomItem()
